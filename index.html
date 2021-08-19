@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="form__button">
+                <div id="btn"></div>
+                <button type="button" class="btn form__button--login" onclick="login()">Log in</button>
+                <button type="button" class="btn form__button--register" onclick="register()">Register</button>
+            </div>
+
+            <div class="form__icons">
+                <a class="form__icons--facebook" href=""> <i class="fab fa-facebook"></i> </a>
+                <a class="form__icons--twitter" href=""> <i class="fab fa-twitter"></i></a>
+                <a class="form__icons--google" href=""> <i class="fab fa-google"></i></a>
+            </div>
+            
+            <div  id="Login" class="form__input">
+                <!-- Form Log in -->
+                <form accept="">
+                    <input class="form__input--field" type="text" placeholder="User ID" required>
+                    <input class="form__input--field" type="password" placeholder="Enter Password" required>
+                    <div class="form__input--checkbox">
+                        <input style="cursor:pointer;" type="checkbox"> <span>Remember Password</span>
+                    </div>
+                    <button type="submit" class="form__input--submit">Log in</button>
+                </form>
+            </div>
+            <!-- Form Register -->
+            <div id="Register" class="form__input">   
+                <form accept="">
+                    <input class="form__input--field" type="text" placeholder="User ID" required>
+                    <input class="form__input--field" type="email" placeholder="Email ID" required>
+                    <input class="form__input--field" type="password" placeholder="Enter Password" required>
+                    <input class="form__input--field" type="password" placeholder="Enter Password Again" required>
+                    <div class="form__input--checkbox">
+                        <input style="cursor:pointer;" type="checkbox"> <span>I agree to the terms</span>
+                    </div>
+                    <button type="submit" class="form__input--submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var a = document.getElementById("Login");
+        var b = document.getElementById("Register");
+        var c = document.getElementById("btn");
+        function register() {
+            a.style.display = "none";
+            b.style.left = "50px";
+            c.style.left = "110px";
+        }
+        function login() {
+            a.style.display = "block"
+            b.style.left = "450px";
+            c.style.left = "0";
+        }
+    </script>
+</body>
+</html>

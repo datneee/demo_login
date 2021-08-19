@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.btn {
+    position: relative;
+    border: 0;
+    outline: none;
+    background: transparent; 
+    cursor: pointer; 
+    padding: 10px 32px;
+} 
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url(./background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form {
+    position:relative;
+    width: 380px;
+    height: 480px;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+.form input {
+    outline: none;
+}
+.form__button {
+    width: 220px;  
+    margin: 35px auto 0px;
+    position:relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+#btn {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    border-radius: 30px; ;
+    background: linear-gradient( to right, #bfd3d9, #0a98c2);
+    transition: .3s;
+}
+.form__icons {
+    margin: 36px 15px 18px;
+    padding: 12px;
+    text-align: center;
+}
+.form__icons a{
+    width: 30px;
+    font-size: 18px;
+    padding: 18px;
+    margin: 2px;
+    box-shadow: 0 0 12px 0 #7f7f7f3d;
+    border-radius: 50px;
+    cursor: pointer;
+ }
+ .form__icons a:hover {
+     background-color: #049cc8;
+     transition: .3s;
+     color: #fff;
+ }
+ .form__icons--facebook {
+    text-decoration: none;
+    color: #2d88ff;
+    
+}
+.form__icons--twitter {
+    text-decoration: none;
+    color: rgba(29,161,242,1.00)
+}
+.form__icons--google {
+    text-decoration: none;
+    color: #1a0dab;
+} 
+.form__input {
+    width: 280px;
+    margin: auto;
+    transition: .3s;
+} 
+.form__input--field {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+.form__input--checkbox {
+    display: inline-block;
+    margin: 18px 0px;
+    padding: 5px 0px;
+}
+span {
+    font-size: 14px;
+    color: #777;
+}
+.form__input--submit {
+    margin: 10px auto;
+    background: linear-gradient( to right, #bfd3d9, #0a98c2);
+    display: block;
+    width: 85%;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+.form__input--submit:hover {
+    opacity: 0.8;
+    transition: .3s;
+    color: #fff;
+}
+/* login && register */
+
+#Register {
+    position: absolute;
+    left: 450px;
+
+}
